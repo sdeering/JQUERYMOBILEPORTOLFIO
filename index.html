@@ -1,0 +1,592 @@
+<!--
+    jQuery Mobile Portfolio
+    Author: Sam Deering (samdeering.com)
+    Article: jquery4u.com/mobile/jquery-mobile-portfolio/
+    Demo: jquery4u.com/demos/mobileportfoliosite/
+-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Mobile Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="mobile portfolio, mobile portfolio site">
+        <meta name="author" content="sam deering">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery.mobile-1.2.0.min.js"></script>
+        <link href="css/jquery.mobile.structure-1.2.0.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile.theme-1.2.0.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile-1.2.0.min.css" rel="stylesheet">
+        <link href="css/photoswipe.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/klass.min.js"></script>
+        <script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
+    </head>
+
+    <body>
+
+        <!-- homepage -->
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Mobile Portfolio</h1>
+            </div>
+            <div data-role="content">
+
+                    <div class="pt-menu">
+                        <a data-theme="d" data-corners="false" data-role="button" href="#profile">
+                            <img src="images/icons/round/64x64/profile.png" alt="rss" style="display: block; margin: 0 auto">
+                            Profile
+                        </a>
+
+                        <a data-theme="d" data-corners="false" data-role="button" href="#portfolio">
+                            <img src="images/icons/round/64x64/portfolio.png" alt="rss" style="display: block; margin: 0 auto">
+                            Portfolio
+                        </a>
+
+                        <a data-theme="d" data-corners="false" data-role="button" href="#social">
+                            <img src="images/icons/round/64x64/linkedin.png" alt="mail" style="display: block; margin: 0 auto">
+                            Social
+                        </a>
+
+                        <a data-theme="d" data-corners="false" data-role="button" href="#contact">
+                            <img src="images/icons/round/64x64/mail.png" alt="mail" style="display: block; margin: 0 auto">
+                            Contact
+                        </a>
+
+                    </div>
+
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+
+        <!-- personal profile page -->
+        <div data-role="page" id="profile" data-title="profile">
+            <div data-role="header">
+                <h1>My Profile</h1>
+                <a data-role="button" href="#home" data-icon="home" data-corners="false">Home</a>
+            </div>
+            <div data-role="content">
+
+                <!-- profile image -->
+                <img src="images/icons/avatar/m_10.png" alt="mee" />
+
+                <!-- my profile -->
+                <div data-role="collapsible-set">
+
+                    <div data-role="collapsible" data-corners="false" class="ui-corner-none" data-collapsed="false">
+                        <h2 class="ui-collapsible-heading"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                            <span class="ui-btn-text">Personal Profile</span>
+                        </a></h2>
+                        <div class="ui-body ui-body-d ui-textalign-left">
+
+                            <!-- profile fields -->
+                            <div class="tablerow">
+                                <div class="left-table">Name:</div>
+                                <div class="right-table">Joe Bloggs</div>
+                            </div>
+                            <div class="tablerow">
+                                <div class="left-table">Age:</div>
+                                <div class="right-table">27</div>
+                            </div>
+                            <div class="tablerow">
+                                <div class="left-table">Gender:</div>
+                                <div class="right-table">Male</div>
+                            </div>
+                            <div class="tablerow">
+                                <div class="left-table">Location:</div>
+                                <div class="right-table">USA</div>
+                            </div>
+                            <div class="tablerow">
+                                <div class="left-table">Job:</div>
+                                <div class="right-table">Web Monkey</div>
+                            </div>
+                            <div class="tablerow">
+                                <div class="left-table">Bio:</div>
+                                <div class="right-table">I work full time as a Web Developer and I love making new and exciting websites.</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- my skills -->
+                    <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                            <span class="ui-btn-text">Skills & Experience</span>
+                        </a></h2>
+                        <div class="ui-body ui-body-d ui-textalign-left">
+
+                            <div data-role="collapsible-set">
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">JavaScript</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                        JavaScript (sometimes abbreviated as JS) is a scripting language commonly implemented as part of a web browser in order to create enhanced user interfaces and dynamic websites. <a href="http://en.wikipedia.org/wiki/JavaScript">Wiki</a>
+                                    </div>
+                                </div>
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">jQuery</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                        jQuery is a multi-browser JavaScript library designed to simplify the client-side scripting of HTML.[1] It was released in January 2006 at BarCamp NYC by John Resig. It is currently developed by a team of developers led by Dave Methvin. Used by over 55% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.[2][3] <a href="http://en.wikipedia.org/wiki/jQuery">Wiki</a>
+                                    </div>
+                                </div>
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">jQuery Mobile</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                        jQuery Mobile is a touch-optimized web framework (additionally known as a JavaScript library or a mobile framework) currently being developed by the jQuery project team. The development focuses on creating a framework compatible with a wide variety of smartphones and tablet computers,[2] made necessary by the growing but heterogeneous tablet and smartphone market.[3] <a href="http://en.wikipedia.org/wiki/JQuery_Mobile">Wiki</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- my employment -->
+                    <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                            <span class="ui-btn-text">Employment History</span>
+                        </a></h2>
+                        <div class="ui-body ui-body-d ui-textalign-left ui-corner-none" data-corners="false">
+
+                            <div data-role="collapsible-set" class="ui-corner-none" data-corners="false">
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">2012 - 2013: Microsoft</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                        Microsoft Corporation is an American multinational software corporation headquartered in Redmond, Washington that develops, manufactures, licenses and supports a wide range of products and services related to computing. The company was founded by Bill Gates and Paul Allen on April 4, 1975. Microsoft is the world's largest software maker measured by revenues.[3] It is also one of the world's most valuable companies.[4] <a href="http://en.wikipedia.org/wiki/Microsoft">Wiki</a>
+                                    </div>
+                                </div>
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">2010 - 2012: Google</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                         Google Inc. (NASDAQ: GOOG) is an American multinational corporation that provides Internet-related products and services, including internet search, cloud computing, software and advertising technologies.[6] Advertising revenues from AdWords generate almost all of the company's profits.[7][8] <a href="http://en.wikipedia.org/wiki/Google">Wiki</a>
+                                    </div>
+                                </div>
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">2008 - 2010: Intel</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                         Intel Corporation (NASDAQ: INTC) is an American multinational semiconductor chip maker corporation headquartered in Santa Clara, California. Intel is the world's largest and highest valued semiconductor chip maker, based on revenue.[3] It is the inventor of the x86 series of microprocessors, the processors found in most personal computers. <a href="http://en.wikipedia.org/wiki/Intel">Wiki</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                        <h2 class="ui-collapsible-heading"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                            <span class="ui-btn-text">Interests & Hobbies</span>
+                        </a></h2>
+                        <div class="ui-body ui-body-d ui-textalign-left ui-corner-none" data-corners="false">
+
+                            <div data-role="collapsible-set" class="ui-corner-none" data-corners="false">
+
+                                <!-- interests & hobbies -->
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">Fishing</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                        Fishing is the activity of trying to catch fish. Fish are normally caught in the wild. Techniques for catching fish include hand gathering, spearing, netting, angling and trapping. <a href="http://en.wikipedia.org/wiki/Fishing">Wiki</a>
+                                    </div>
+                                </div>
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">Swimming</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                        Human swimming is the self propulsion of a person through water or other liquid, for survival, recreation, sport, exercise or other reason. Locomotion is achieved through co-ordinated movement of the limbs, the body, or both. Humans are able to hold their breath underwater and undertake rudimentary locomotive swimming within weeks of birth, as an evolutionary response.[1] <a href="http://en.wikipedia.org/wiki/Human_swimming">Wiki</a>
+                                    </div>
+                                </div>
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">8 Ball</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                        Eight-ball (often spelled 8-ball or eightball, and sometimes called spots and stripes, stripes and solids or, more rarely, bigs and littles or highs and lows) is a pool (pocket billiards) game popular in much of the world, and the subject of international professional and amateur competition.  <a href="http://en.wikipedia.org/wiki/8_ball">Wiki</a>
+                                    </div>
+                                </div>
+
+                                <div data-role="collapsible" data-corners="false" class="ui-corner-none">
+                                    <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-icon="plus" data-iconpos="left" data-theme="d">
+                                        <span class="ui-btn-text">Swimming</span>
+                                    </a></h2>
+                                    <div class="ui-body ui-textalign-left">
+                                        An acoustic guitar is a guitar that uses only an acoustic sound board to help transmitting the strings' vibrational energy to the air in order to produce a sound. The initial timbre and harmonics of the sound in an acoustic guitar are produced by the plucking of the string. <a href="http://en.wikipedia.org/wiki/Acoustic_guitar">Wiki</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ui-body">
+                    <!-- previous page link -->
+<!--                     <a class="previous-btn" data-theme="c" data-corners="false" data-role="button" data-inline="true" data-icon="arrow-l" href="#home">
+                        <img src="images/icons/round/64x64/home.png" alt="rss" style="display: block; margin: 0 auto">
+                        Home
+                    </a> -->
+
+                    <!-- next page link -->
+                    <a class="next-btn" data-theme="c" data-corners="false" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" href="#portfolio">
+                        <img src="images/icons/round/64x64/portfolio.png" alt="rss" style="display: block; margin: 0 auto">
+                        Portfolio
+                    </a>
+                </div>
+
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+
+        <!-- portfolio page -->
+        <div data-role="page" id="portfolio" data-title="portfolio">
+            <div data-role="header">
+                <h1>My Portfolio</h1>
+                <a data-role="button" href="#home" data-transition="flip" data-icon="home" data-corners="false">Home</a>
+            </div>
+            <div data-role="content">
+
+                <ul data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow ui-corner-none">
+
+                    <!-- portfolio item 1 -->
+                    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="false" data-iconpos="right" data-theme="c" class="portfolio-item ui-btn ui-btn-icon-right ui-li ui-li-has-alt ui-li-has-thumb ui-first-child ui-btn-up-c ui-corner-none"><div class="ui-btn-inner ui-li ui-li-has-alt">
+                        <div class="ui-btn-text">
+                            <a href="#portfolio1" class="ui-link-inherit ui-corner-none">
+                                <img src="images/portfolio/1/thumb/1_1.jpg" class="ui-li-thumb ui-corner-none">
+                                <h3 class="ui-li-heading">Portfolio Item 1</h3>
+                                <p class="ui-li-desc">A portfolio item example.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#portfolio1" title="Purchase album" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-r" data-iconpos="notext" data-theme="b" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></span></span></span></a></li>
+
+                    <!-- portfolio item 2 -->
+                    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="false" data-iconpos="right" data-theme="c" class="portfolio-item ui-btn ui-btn-icon-right ui-li ui-li-has-alt ui-li-has-thumb ui-first-child ui-btn-up-c"><div class="ui-btn-inner ui-li ui-li-has-alt">
+                        <div class="ui-btn-text">
+                            <a href="#portfolio2" class="ui-link-inherit">
+                                <img src="images/portfolio/2/thumb/2_1.jpg" class="ui-li-thumb">
+                                <h3 class="ui-li-heading">Portfolio Item 2</h3>
+                                <p class="ui-li-desc">Another portfolio item example.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#portfolio2" title="Purchase album" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-r" data-iconpos="notext" data-theme="b" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></span></span></span>
+                    </a></li>
+
+                    <!-- portfolio item 3 -->
+                    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="false" data-iconpos="right" data-theme="c" class="portfolio-item ui-btn ui-btn-icon-right ui-li ui-li-has-alt ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li ui-li-has-alt"><div class="ui-btn-text"><a href="#portfolio3" class="ui-link-inherit">
+                    <img src="images/portfolio/4/thumb/4_1.jpg" class="ui-li-thumb">
+                    <h3 class="ui-li-heading">Portfolio Gallery 1</h3>
+                    <p class="ui-li-desc">A portfolio gallery example.</p></a>
+
+                    </div></div><a href="#portfolio3" title="Purchase album" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-r" data-iconpos="notext" data-theme="b" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></span></span></span></a></li>
+
+                    <!-- portfolio item 4 -->
+                    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="false" data-iconpos="right" data-theme="c" class="portfolio-item ui-btn ui-btn-icon-right ui-li ui-li-has-alt ui-li-has-thumb ui-btn-up-c ui-corner-none"><div class="ui-btn-inner ui-li ui-li-has-alt"><div class="ui-btn-text"><a href="#portfolio4" class="ui-link-inherit">
+                    <img src="images/portfolio/3/thumb/3_1.jpg" class="ui-li-thumb ui-corner-none">
+                    <h3 class="ui-li-heading">Portfolio Gallery 2</h3>
+                    <p class="ui-li-desc">Another portfolio gallery example.</p></a>
+
+                    </div></div><a href="#portfolio4" title="Purchase album" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-d" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-r" data-iconpos="notext" data-theme="d" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></span></span></span></a></li>
+
+                </ul>
+
+                <div>
+                    <!-- previous page link -->
+                    <a class="previous-btn" data-theme="c" data-corners="false" data-role="button" data-inline="true" data-icon="arrow-l" href="#profile">
+                        <img src="images/icons/round/64x64/profile.png" alt="rss" style="display: block; margin: 0 auto">
+                        Profile
+                    </a>
+
+                    <!-- next page link -->
+                    <a class="next-btn" data-theme="c" data-corners="false" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" href="#social">
+                        <img src="images/icons/round/64x64/linkedin.png" alt="rss" style="display: block; margin: 0 auto">
+                        Social
+                    </a>
+                </div>
+
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+
+        <!-- portfolio page 1 -->
+        <div data-role="page" id="portfolio1" data-title="portfolio1">
+            <div data-role="header">
+                <h1>Portfolio Item 1</h1>
+                <a data-role="button" href="#portfolio" data-transition="flip" data-icon="arrow-l" data-corners="false">Back</a>
+            </div>
+            <div data-role="content">
+
+                <img src="images/portfolio/1/full/1_1.jpg" alt="portfolio item 1" />
+
+                <p>Career portfolios are used to plan, organize and document education, work samples and skills. People use career portfolios to apply to jobs, apply to college or training programs, get a higher salary, show transferable skills, and to track personal development. They are more in-depth than a resume, which is used to summarize the above in one or two pages. Career portfolios serve as proof of one's skills, abilities, and potential in the future. Career portfolios are becoming common in high schools, college, and workforce development.[citation needed] Many school programs will have students create, update, and use a career portfolio before moving on to the next level in life. <a href="http://en.wikipedia.org/wiki/Portfolio">Wiki</a></p>
+
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+
+        <!-- portfolio page 2 -->
+        <div data-role="page" id="portfolio2" data-title="portfolio2">
+            <div data-role="header">
+                <h1>Portfolio Item 2</h1>
+                <a data-role="button" href="#portfolio" data-transition="flip" data-icon="arrow-l" data-corners="false">Back</a>
+            </div>
+            <div data-role="content">
+
+                <img src="images/portfolio/2/full/2_1.jpg" alt="portfolio item 2" />
+
+                <p>Career portfolios are used to plan, organize and document education, work samples and skills. People use career portfolios to apply to jobs, apply to college or training programs, get a higher salary, show transferable skills, and to track personal development. They are more in-depth than a resume, which is used to summarize the above in one or two pages. Career portfolios serve as proof of one's skills, abilities, and potential in the future. Career portfolios are becoming common in high schools, college, and workforce development.[citation needed] Many school programs will have students create, update, and use a career portfolio before moving on to the next level in life. <a href="http://en.wikipedia.org/wiki/Portfolio">Wiki</a></p>
+
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+
+        <!-- portfolio page 3 -->
+        <div data-role="page" id="portfolio3" data-title="portfolio3">
+            <div data-role="header">
+                <h1>Portfolio Gallery 1</h1>
+                <a data-role="button" href="#portfolio" data-transition="flip" data-icon="arrow-l" data-corners="false">Back</a>
+            </div>
+            <div data-role="content">
+
+                <!-- gallery images -->
+                <ul id="gallery1" class="gallery">
+                    <li><a href="images/portfolio/4/full/4_1.jpg" rel="external"><img src="images/portfolio/4/thumb/4_1.jpg" alt="portfolio Image 01" /></a></li>
+                    <li><a href="images/portfolio/4/full/4_2.jpg" rel="external"><img src="images/portfolio/4/thumb/4_2.jpg" alt="portfolio Image 02" /></a></li>
+                    <li><a href="images/portfolio/4/full/4_3.jpg" rel="external"><img src="images/portfolio/4/thumb/4_3.jpg" alt="portfolio Image 03" /></a></li>
+                    <li><a href="images/portfolio/4/full/4_4.png" rel="external"><img src="images/portfolio/4/thumb/4_4.png" alt="portfolio Image 04" /></a></li>
+                    <li><a href="images/portfolio/4/full/4_5.png" rel="external"><img src="images/portfolio/4/thumb/4_5.png" alt="portfolio Image 05" /></a></li>
+                    <li><a href="images/portfolio/4/full/4_6.png" rel="external"><img src="images/portfolio/4/thumb/4_6.png" alt="portfolio Image 06" /></a></li>
+                    <li><a href="images/portfolio/4/full/4_7.png" rel="external"><img src="images/portfolio/4/thumb/4_4.png" alt="portfolio Image 07" /></a></li>
+                    <li><a href="images/portfolio/4/full/4_8.png" rel="external"><img src="images/portfolio/4/thumb/4_5.png" alt="portfolio Image 08" /></a></li>
+                    <li><a href="images/portfolio/4/full/4_9.png" rel="external"><img src="images/portfolio/4/thumb/4_6.png" alt="portfolio Image 09" /></a></li>
+                </ul>
+
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+
+        <!-- portfolio page 4 -->
+        <div data-role="page" id="portfolio4" data-title="portfolio4">
+            <div data-role="header">
+                <h1>Portfolio Gallery 2</h1>
+                <a data-role="button" href="#portfolio" data-transition="flip" data-icon="arrow-l" data-corners="false">Back</a>
+            </div>
+            <div data-role="content">
+
+                <!-- gallery images -->
+                <ul id="gallery2" class="gallery">
+                    <li><a href="images/portfolio/3/full/3_1.jpg" rel="external"><img src="images/portfolio/3/thumb/3_1.jpg" alt="portfolio Image 01" /></a></li>
+                    <li><a href="images/portfolio/3/full/3_2.jpg" rel="external"><img src="images/portfolio/3/thumb/3_2.jpg" alt="portfolio Image 02" /></a></li>
+                    <li><a href="images/portfolio/3/full/3_3.jpg" rel="external"><img src="images/portfolio/3/thumb/3_3.jpg" alt="portfolio Image 03" /></a></li>
+                    <li><a href="images/portfolio/3/full/3_4.jpg" rel="external"><img src="images/portfolio/3/thumb/3_4.jpg" alt="portfolio Image 04" /></a></li>
+                    <li><a href="images/portfolio/3/full/3_1.jpg" rel="external"><img src="images/portfolio/3/thumb/3_1.jpg" alt="portfolio Image 05" /></a></li>
+                    <li><a href="images/portfolio/3/full/3_2.jpg" rel="external"><img src="images/portfolio/3/thumb/3_2.jpg" alt="portfolio Image 06" /></a></li>
+                </ul>
+
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+
+
+        <!-- social page -->
+        <div data-role="page" id="social" data-title="Social">
+            <div data-role="header">
+                <h1>Social</h1>
+                <a data-role="button" href="#home" data-transition="flip"
+                data-icon="home" data-corners="false">Home</a>
+            </div>
+            <div data-role="content">
+
+                <div id="social-links" class="pt-menu">
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#twitter">
+                        <img src="images/icons/round/64x64/twitter.png" alt="twitter" style="display: block; margin: 0 auto">
+                        Twitter
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#facebook">
+                        <img src="images/icons/round/64x64/facebook.png" alt="facebook" style="display: block; margin: 0 auto">
+                        Facebook
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#googleplus">
+                        <img src="images/icons/round/64x64/google+.png" alt="google+" style="display: block; margin: 0 auto">
+                        Google+
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#youtube">
+                        <img src="images/icons/round/64x64/youtube.png" alt="youtube" style="display: block; margin: 0 auto">
+                        YouTube
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#linkedin">
+                        <img src="images/icons/round/64x64/linkedin.png" alt="linkedin" style="display: block; margin: 0 auto">
+                        LinkedIn
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#flickr">
+                        <img src="images/icons/round/64x64/flickr.png" alt="flickr" style="display: block; margin: 0 auto">
+                        Flickr
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#instagram">
+                        <img src="images/icons/round/64x64/instagram.png" alt="instagram" style="display: block; margin: 0 auto">
+                        Instagram
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#pinterest">
+                        <img src="images/icons/round/64x64/pinterest.png" alt="pinterest" style="display: block; margin: 0 auto">
+                        Pinterest
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#skype">
+                        <img src="images/icons/round/64x64/skype.png" alt="skype" style="display: block; margin: 0 auto">
+                        Skype
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#delicious">
+                        <img src="images/icons/round/64x64/delicious.png" alt="delicious" style="display: block; margin: 0 auto">
+                        Delicious
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#technorati">
+                        <img src="images/icons/round/64x64/technorati.png" alt="technorati" style="display: block; margin: 0 auto">
+                        Technorati
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#vimeo">
+                        <img src="images/icons/round/64x64/vimeo.png" alt="vimeo" style="display: block; margin: 0 auto">
+                        Vimeo
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#stumbleupon">
+                        <img src="images/icons/round/64x64/stumbleupon.png" alt="stumbleupon" style="display: block; margin: 0 auto">
+                        Stumbleupon
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#reddit">
+                        <img src="images/icons/round/64x64/reddit.png" alt="reddit" style="display: block; margin: 0 auto">
+                        Reddit
+                    </a>
+
+                    <a data-theme="d" data-corners="false" data-role="button" href="#digg">
+                        <img src="images/icons/round/64x64/digg.png" alt="digg" style="display: block; margin: 0 auto">
+                        Digg
+                    </a>
+
+                </div>
+
+                <div>
+                    <!-- previous page link -->
+                    <a class="previous-btn" data-theme="c" data-corners="false" data-role="button" data-inline="true" data-icon="arrow-l" href="#portfolio">
+                        <img src="images/icons/round/64x64/portfolio.png" alt="rss" style="display: block; margin: 0 auto">
+                        Portfolio
+                    </a>
+
+                    <!-- next page link -->
+                    <a class="next-btn" data-theme="c" data-corners="false" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" href="#contact">
+                        <img src="images/icons/round/64x64/mail.png" alt="rss" style="display: block; margin: 0 auto">
+                        Contact
+                    </a>
+                </div>
+
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+
+        <!-- Contact page -->
+        <div data-role="page" id="contact" data-title="Contact">
+            <div data-role="header">
+                <h1>Contact Me</h1>
+                <a data-role="button" href="#home" data-icon="home" data-corners="false">Home</a>
+            </div>
+            <div data-role="content">
+                <form method="POST" action="php/contact.php" id="contact" novalidate="novalidate">
+                    <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+                        <label for="name" class="ui-input-text">
+                            Name*:
+                        </label>
+                        <input type="text" class="required ui-input-text ui-body-d ui-corner-none ui-shadow-inset"
+                        value="" name="name" id="name" data-corners="false">
+                    </div>
+                    <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+                        <label for="email" class="ui-input-text">
+                            Email*:
+                        </label>
+                        <input type="email" class="required ui-input-text ui-body-d ui-corner-none ui-shadow-inset"
+                        value="" name="email" id="email" data-corners="false">
+                    </div>
+                    <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+                        <label for="msg" class="ui-input-text">
+                            Message*:
+                        </label>
+                        <textarea class="required ui-input-text ui-body-d ui-corner-none ui-shadow-inset"
+                        rows="8" cols="160" name="msg" id="msg" data-corners="false"></textarea>
+                    </div>
+                    <button type="submit" data-theme="d" name="submit" value="submit" class="ui-btn-hidden" aria-disabled="false" data-corners="false">Send Message</button>
+                </form>
+
+                <div>
+                    <!-- previous page link -->
+                    <a class="previous-btn" data-theme="c" data-corners="false" data-role="button" data-inline="true" data-icon="arrow-l" href="#social">
+                        <img src="images/icons/round/64x64/linkedin.png" alt="rss" style="display: block; margin: 0 auto">
+                        Social
+                    </a>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h2>Mobile Portfolio</h2>
+                <p class="copyright">&copy; Copyright 2013</p>
+            </div>
+        </div>
+    </body>
+
+</html>
