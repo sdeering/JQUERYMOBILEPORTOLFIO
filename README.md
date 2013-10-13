@@ -3,6 +3,8 @@ jQuery Mobile Portfolio Website Template
 
 jQuery Mobile Portfolio Website Template
 
+Live Demo: http://www.jquery4u.com/demos/mobileportfoliosite/
+
 **Profile Section**
 
 The profile section is pretty basic and can contain personal details you might find on a standard resume such as name, age, location, skills, experience, education etc..
